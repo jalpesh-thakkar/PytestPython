@@ -2,8 +2,6 @@ import pytest
 
 
 
-@pytest.fixture
+@pytest.fixture(scope='session')
 def preSetupWork():
     print('I setup browser instance')
-
-
